@@ -5,16 +5,14 @@ import { Error404 } from "./pages/Error404"
 function App() {
   
 
-  return 
-    <>
+  return(
      <BrowserRouter>
         <Routes>
           <Route index element={<Dashboard />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
      </BrowserRouter>
-     
-    </>
+  )
   
 };
 
